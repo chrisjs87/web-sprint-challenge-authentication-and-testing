@@ -6,8 +6,15 @@ function findByUsername(username) {
     .where(username).first()
 }
 
-function addUser({ username, password }) {
+function findById(user_id) {
+  return db('users')
+    .select('id', 'username', 'password')
+    .where('id', user_id).first()
+}
 
+async function addUser({ username, password }) {
+  const [user_id] = await db('users').insert({ username, password })
+  return findById(user_id)
 }
 
 module.exports = {

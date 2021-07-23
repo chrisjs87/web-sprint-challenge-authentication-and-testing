@@ -9,6 +9,16 @@ const checkUserNameExists = async (req, res, next) => {
   }
 }
 
+const checkBodyEntered = (req, res, next) => {
+  const { username, password } = req.body
+  if (!username || !password || username === undefined || password === undefined) {
+    next({ status: 400, message: "username and password required" })
+  } else {
+    next()
+  }
+}
+
 module.exports = {
   checkUserNameExists,
+  checkBodyEntered,
 }
