@@ -3,7 +3,17 @@ const db = require('../../data/dbConfig')
 function findByUsername(username) {
   return db('users')
     .select('username')
+    // .select('id', 'username', 'password')
     .where(username).first()
+    // .where('username', username).first()
+}
+
+function findByUsername2(username) {
+  return db('users')
+    // .select('username')
+    .select('id', 'username', 'password')
+    .where(username).first()
+    // .where('username', username).first()
 }
 
 function findById(user_id) {
@@ -20,4 +30,5 @@ async function addUser({ username, password }) {
 module.exports = {
   findByUsername,
   addUser,
+  findByUsername2
 }
