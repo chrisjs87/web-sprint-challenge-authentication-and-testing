@@ -32,8 +32,8 @@ We also need to make sure nobody without the token can call `[GET] /api/jokes` a
 
 Your finished project must include all of the following requirements (further instructions are found inside each file):
 
-- [ ] An authentication workflow with functionality for account creation and login, implemented inside `api/auth/auth-router.js`.
-- [ ] Middleware used to restrict access to resources from non-authenticated requests, implemented inside `api/middleware/restricted.js`.
+- [COMPLETE] An authentication workflow with functionality for account creation and login, implemented inside `api/auth/auth-router.js`.
+- [COMPLETE] Middleware used to restrict access to resources from non-authenticated requests, implemented inside `api/middleware/restricted.js`.
 - [ ] A minimum of 2 tests per API endpoint, written inside `api/server.test.js`.
 
 **IMPORTANT Notes:**
