@@ -26,7 +26,7 @@ Users must be able to call the `[POST] /api/auth/register` endpoint to create a 
 
 We also need to make sure nobody without the token can call `[GET] /api/jokes` and gain access to our dad jokes.
 
-We will hash the user's password using `bcryptjs`, and use JSON Web Tokens and the `jsonwebtoken` library.
+[COMPLETE] We will hash the user's password using `bcryptjs`, and use JSON Web Tokens and the `jsonwebtoken` library.
 
 ### MVP
 
@@ -50,12 +50,12 @@ Your finished project must include all of the following requirements (further in
 
 ## Submission format
 
-- [ ] Submit via Codegrade by committing and pushing any new changes.
-- [ ] Create a pull request to merge `<firstName-lastName>` branch into `main`.
-- [ ] Please don't merge your own pull request and make sure **you are on your own repo**.
-- [ ] Check Codegrade for automated feedback.
-- [ ] Check Codegrade on the days following the Sprint Challenge for reviewer feedback.
-- [ ] Any changes pushed after the deadline will not receive any feedback.
+- [COMPLETE] Submit via Codegrade by committing and pushing any new changes.
+- [COMPLETE] Create a pull request to merge `<firstName-lastName>` branch into `main`.
+- [COMPLETE] Please don't merge your own pull request and make sure **you are on your own repo**.
+- [COMPLETE] Check Codegrade for automated feedback.
+- [COMPLETE] Check Codegrade on the days following the Sprint Challenge for reviewer feedback.
+- [COMPLETE] Any changes pushed after the deadline will not receive any feedback.
 
 ## Interview Questions
 
